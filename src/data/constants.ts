@@ -25,6 +25,13 @@ export enum SkillNames {
   GCP = "gcp",
   VIM = "vim",
   VERCEL = "vercel",
+  PYTHON = "python",
+  FASTAPI = "fastapi",
+  NEO4J = "neo4j",
+  CELERY = "celery",
+  LIDAR = "lidar",
+  LLM = "llm",
+  QUANTUM = "quantum",
 }
 export type Skill = {
   id: number;
@@ -243,6 +250,62 @@ using use = useUsing("use")`,
     color: "#6cc24a",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vercel/vercel-original.svg",
   },
+  [SkillNames.PYTHON]: {
+    id: 100,
+    name: "python",
+    label: "Python",
+    shortDescription: "The Swiss Army knife of coding! 🐍✨",
+    color: "#3776ab",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+  },
+  [SkillNames.FASTAPI]: {
+    id: 101,
+    name: "fastapi",
+    label: "FastAPI",
+    shortDescription: "Backend speed like a rocket! 🚀💨",
+    color: "#05998b",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
+  },
+  [SkillNames.NEO4J]: {
+    id: 102,
+    name: "neo4j",
+    label: "Neo4j",
+    shortDescription: "Graphing your data with style! 🕸️🎨",
+    color: "#008cc1",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/neo4j/neo4j-original.svg",
+  },
+  [SkillNames.CELERY]: {
+    id: 103,
+    name: "celery",
+    label: "Celery",
+    shortDescription: "Distributed tasks? Easy peasy! 🥬📦",
+    color: "#37814a",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", // Placeholder icon
+  },
+  [SkillNames.LIDAR]: {
+    id: 104,
+    name: "lidar",
+    label: "Lidar",
+    shortDescription: "Eyes for your hardware! 👁️🛰️",
+    color: "#ffcc00",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg", // Placeholder
+  },
+  [SkillNames.LLM]: {
+    id: 105,
+    name: "llm",
+    label: "LLMs",
+    shortDescription: "The brain behind the AI! 🧠🤖",
+    color: "#ff6600",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg", // Placeholder
+  },
+  [SkillNames.QUANTUM]: {
+    id: 106,
+    name: "quantum",
+    label: "Quantum",
+    shortDescription: "Processing at the subatomic level! ⚛️🔬",
+    color: "#9933ff",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg", // Placeholder
+  },
 };
 
 export type Experience = {
@@ -258,50 +321,31 @@ export type Experience = {
 export const EXPERIENCE: Experience[] = [
   {
     id: 1,
-    startDate: "Dec 2024",
+    startDate: "Recent",
     endDate: "Present",
-    title: "Full Stack Developer",
-    company: "OmniNexus Sdn Bhd",
+    title: "Software Engineer",
+    company: "High-Performance Engineering Team",
     description: [
-      "Built a custom image editor from scratch, cutting $4.8k/year in SaaS costs.",
-      "Architected async job queues processing 1k+ AI tasks daily with bulletproof reliability.",
-      "Optimized media delivery pipeline, slashing asset load times by 40%.",
-      "Shipped high-impact features end-to-end from requirements to production.",
+      "Operating within the engineering team to build high-performance internal tools and optimize development workflows.",
+      "Engineered robust Python automation scripts to accelerate data ingestion and testing workflows, reducing manual processing time.",
+      "Architected and built a web-based dashboard for visualizing real-time hardware system performance metrics.",
+      "Maintained CI/CD pipelines and debugged backend infrastructure to ensure stability across environments.",
+      "Gained immersive experience in writing production-grade code at scale, understanding the rigorous standards required for high-performance computing.",
     ],
     skills: [
-      SkillNames.NEXTJS,
       SkillNames.TS,
-      SkillNames.REACT,
       SkillNames.NODEJS,
-      SkillNames.POSTGRES,
-      SkillNames.MONGODB,
       SkillNames.DOCKER,
-      SkillNames.GCP,
+      SkillNames.PYTHON, // Assuming it's in the enum or I should add it
+      SkillNames.GIT,
+      SkillNames.LINUX,
     ],
   },
-  {
-    id: 2,
-    startDate: "Apr 2022",
-    endDate: "Dec 2024",
-    title: "Freelance Full Stack Developer",
-    company: "Self-employed",
-    description: [
-      "Transformed chaotic Excel sheets into polished internal tools for various clients.",
-      "Shipped dashboards and custom CMS platforms tailored to each client's workflow.",
-      "Automated repetitive processes, improving efficiency and reducing human error.",
-      "Focused on clean, maintainable code and interfaces that users actually enjoy.",
-    ],
-    skills: [
-      SkillNames.REACT,
-      SkillNames.VUE,
-      SkillNames.NODEJS,
-      SkillNames.EXPRESS,
-      SkillNames.MONGODB,
-      SkillNames.POSTGRES,
-      SkillNames.TAILWIND,
-      SkillNames.WORDPRESS,
-    ],
-  },
+];
+
+export const ACCOLADES = [
+  "Champion — GTC (2023–2025)",
+  "Winner — YC Hackathon Startup Event",
 ];
 
 export const themeDisclaimers = {

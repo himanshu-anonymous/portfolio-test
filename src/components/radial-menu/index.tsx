@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useCallback, useRef, useContext } from 'react';
+// @ts-ignore
 import confetti from 'canvas-confetti';
 import { RadialMenuPresentational } from './radial-menu-presentational';
 import { MenuItem, Position } from './types';
